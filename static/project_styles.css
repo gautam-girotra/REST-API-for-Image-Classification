@@ -1,0 +1,51 @@
+body{
+background-color: #c4d5f2;
+
+}
+
+.error{
+font-size:60px;
+}
+
+.error-msg{
+font-size:20px;
+color: red;
+}
+
+span{
+font-size: 75px;
+color: red;
+}
+
+h1{
+font-size: 75px;
+color: blue;
+}
+
+h3{
+  font-size: 30px;
+  color: yellow;
+  }
+
+input{
+/* font-size: 20px; */
+
+/* border: none; */
+/* color: black;
+text-decoration: none; */
+cursor: pointer;
+/* padding: 10px 10px; */
+}
+.hover-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #555555;
+    border-radius: 4px;
+  }
+  
+  .hover-button:hover {
+    background-color:  #555555;
+    color: white;
+  }
+  

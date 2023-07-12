@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for(endpoint='static', filename='project_styles.css')}}">
+    <script type="text/javascript" src="{{url_for(endpoint='static', filename='result.js')}}"></script>
+    <meta charset="UTF-8">
+    <title>Predicted Label</title>
+</head>
+<style>
+    h1 {
+      margin-top: 100px;
+    }
+  </style>
+<body onload="show_alert('{{predicted_class}}')"  background="{{url_for(endpoint='static', filename='BackgroundForHomepage.jpg')}}"></body>>
+<center><h1 style="color: white;">Predicted Class Label : <span>{{predicted_class}}</span></h1>
+    <br>
+    <a href="{{url_for(endpoint='homepage')}}"><span><h3>Return to homepage</h3></span></a>
+</center>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="{{url_for(endpoint='static', filename='project_styles.css')}}">
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <style>
+        h1 {
+          margin-top: 100px;
+        }
+input[type="file"] {
+  width: 25%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+input[type="submit"] {
+  /* width: 10%; */
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+}
+      </style>
+    </head>
+
+
+<body background="{{url_for(endpoint='static', filename='BackgroundForHomepage.jpg')}}">
+   <center><h1 style="color: white;">Select the image to predict its label.</h1></center> <br><br>
+   
+   <!-- <form enctype="multipart/form-data" method="post" action="http://localhost:7777/upload/">
+    <center>
+    <p><input type="file" name="image_file" accept="image/*"></p><br>
+    <input type="submit" value="Upload" >
+    </center>
+</form> -->
+<form enctype="multipart/form-data" method="post" action="http://localhost:7777/upload/">
+    <center>
+    <p><input type="file" name="image_file" accept="image/*"></p><br>
+    <input type="submit" value="Upload" class="hover-button" >
+    </center>
+</form>
+
+
+</body>
+</html>
